@@ -15,14 +15,14 @@ test('hex2dec: valid hex',(t) => {
 test('hex2dec: empty arguments', (t) => {
     const [error] = tryCatch(hex2dec);
 
-    t.equal(error.message, 'hex should be string!');
+    t.equal(error.message, 'hex invalid!');
     t.end();
 });
 
-test ('hex2dec: empty string', (t) => {
-     const actual = hex2dec('');
-     const expect = 'Error: hex should be string!';
+test('hex2dec: bad arguments', (t) => {
+    const [error] = tryCatch(hex2dec, 'Kln');
 
-     t.deepEqual(actual, expect);
-     t.end();
- })
+    t.equal(error.message, 'hex invalid!');
+    t.end();
+});
+
