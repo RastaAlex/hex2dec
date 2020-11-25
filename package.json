@@ -1,6 +1,6 @@
 {
-  "name": "hex2dec",
-  "version": "1.0.0",
+  "name": "@rasta-alex/hex2dec",
+  "version": "1.0.1",
   "main": "lib/hex2dec.js",
   "scripts": {
     "lint": "madrun lint",
@@ -15,6 +15,7 @@
   "dependencies": {
     "eslint": "^7.13.0",
     "madrun": "^7.0.5",
+    "minify": "^6.0.1",
     "nyc": "^15.1.0",
     "putout": "^11.3.0",
     "tape": "^5.0.1",
@@ -22,18 +23,25 @@
   },
   "devDependencies": {},
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "rasta-alex",
+  "license": "MIT",
   "directories": {
     "lib": "lib",
     "test": "test"
   },
-  "description": "",
+  "description": "Easy convert hexadecimal to decimal.",
   "nyc": {
     "exclude": [
       "*.js",
       "test"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RastaAlex/hex2dec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RastaAlex/hex2dec/issues"
+  },
+  "homepage": "https://github.com/RastaAlex/hex2dec#readme"
 }
-
