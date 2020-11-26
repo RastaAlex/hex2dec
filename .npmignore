@@ -1,1 +1,7 @@
 .madrun.js
+.putoutcache 
+test/test.js 
+.eslintrc.json 
+.nyc_output
+hex2dec.js.min.js
+
